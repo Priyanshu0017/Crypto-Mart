@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageNotFound = () => {
 
-  let theme = true
+  const {theme} = useSelector(state => state.theme)
 
   return (
     <div

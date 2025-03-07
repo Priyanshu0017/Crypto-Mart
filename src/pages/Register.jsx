@@ -7,7 +7,7 @@ import Loading from "../components/Loading";
 import { registerUser } from "../features/auth/authSlice";
 
 const Register = () => {
-  let theme = true;
+  const {theme} = useSelector(state => state.theme)
   const dispatch = useDispatch();
   const { user, isLoading, isError, message } = useSelector((state) => state.auth);
   const navigate = useNavigate();

@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import Loading from "../components/Loading";
 
 const Home = () => {
-  let theme = true;
+  const {theme} = useSelector(state => state.theme)
   const {isLoading} = useSelector(state=> state.coins)
   const navigate = useNavigate()
   const {isError,message,user} = useSelector(state => state.auth)

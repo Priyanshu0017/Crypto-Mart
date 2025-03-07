@@ -10,6 +10,7 @@ import PageNotFound from "./pages/PageNotFound";
 import SearchPage from "./pages/SearchPage";
 import CoinPage from "./pages/CoinPage";
 import PrivateRoute from "./components/PrivateRoute";
+import ThemeBtn from "./components/ThemeBtn";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/register" element={<Register/>}></Route>
       </Routes>
+      <ThemeBtn/>
       <ToastContainer/>
     </Router>
   );

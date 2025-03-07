@@ -6,7 +6,7 @@ import { searchCoins } from "../features/coins/coinSlice";
 import { Link } from "react-router";
 
 const SearchPage = () => {
-  let theme =true;
+  const {theme} = useSelector(state => state.theme)
   const dispatch = useDispatch()
   const {searchquery} = useParams()
 

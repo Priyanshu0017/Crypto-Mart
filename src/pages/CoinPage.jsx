@@ -6,7 +6,7 @@ import { addToCart } from "../features/cart/cartSlice";
 import Loading from "../components/Loading";
 
 const CoinPage = () => {
-  let theme = true;
+  const {theme} = useSelector(state => state.theme)
   const dispatch = useDispatch();
   const { coin, isLoading, isError, isSuccess } = useSelector((state) => state.coins);
 
